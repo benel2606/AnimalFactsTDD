@@ -57,7 +57,7 @@ blocks:
           - cd /home/semaphore/AnimalFactsTDD
           - yes | sudo apt install pylint
 #            - pylint animal_facts_tests
-- name: "Push"
+  - name: "Push"
     task:
       jobs:
       - name: Push image to Heroku
