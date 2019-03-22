@@ -1,4 +1,4 @@
-from nose.tools import *
+from nose.tools import assert_true
 import requests
 
 def  test_get_animal_facts():
@@ -6,5 +6,5 @@ def  test_get_animal_facts():
     assert_true(response.ok)
     if response.ok:
         return response
-    else:
-        return None
+
+    return None
