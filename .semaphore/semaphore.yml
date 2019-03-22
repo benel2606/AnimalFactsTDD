@@ -1,0 +1,50 @@
+version: v1.0
+name: Animal facts tests
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: "Build"
+    task:
+      env_vars:
+        - name: APP_ENV
+          value: prod
+      jobs:
+      - name: Docker build
+        commands:
+          - checkout
+          - ls -1
+          - echo $APP_ENV
+          - echo "Docker build..."
+          - echo "done"
+  - name: "Install packeages"
+    task:
+      jobs:
+      - name: Install packages
+        commands:
+          - checkout
+          - echo "start install packages"
+          - sudo apt-get update
+          - echo "Install pip"
+          - yes | sudo apt-get install python3-pip 
+          - echo "install nose"
+          - sudo easy_install nose
+          - pip install nose
+          - sudo apt install python-nose
+          - echo "install requests"
+          - sudo easy_install requests
+          - pip install requests
+          - echo "install pylint"
+          - yes | sudo apt-get install pylint
+  - name: "Run unit tests"
+    task:
+      jobs:
+      - name: Run unit test
+        commands:
+          - checkout
+          - echo "Start unit tests"
+          - ls ./home
+#           - ls /home/semaphore/AnimalFactsTDD
+          - sudo apt install python-nose
+          - nosetests -s --verbosity=2 AnimalFactsTests
