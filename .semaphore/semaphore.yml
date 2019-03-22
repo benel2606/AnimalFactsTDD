@@ -56,4 +56,13 @@ blocks:
           - echo "make lint with pylint"
           - cd /home/semaphore/AnimalFactsTDD
           - yes | sudo apt install pylint
-          - pylint animal_facts_tests
+#            - pylint animal_facts_tests
+- name: "Push"
+    task:
+      jobs:
+      - name: Push image to Heroku
+        commands:  
+          - checkout
+          - echo "Push image"
+          - yes | sudo apt install snapd
+          - sudo snap install heroku --classic 
