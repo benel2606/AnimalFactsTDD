@@ -46,7 +46,7 @@ blocks:
           - echo "Start unit tests"
           - cd /home/semaphore/AnimalFactsTDD
           - sudo apt install python-nose
-          - nosetests -s --verbosity=2 AnimalFactsTests
+          - nosetests -s --verbosity=2 animal_facts_tests
   - name: "Lint code"
     task:
       jobs:
@@ -56,4 +56,4 @@ blocks:
           - echo "make lint with pylint"
           - cd /home/semaphore/AnimalFactsTDD
           - yes | sudo apt install pylint
-          - pylint AnimalFactsTests
+          - pylint animal_facts_tests
