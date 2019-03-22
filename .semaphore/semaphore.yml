@@ -64,4 +64,5 @@ blocks:
         commands:  
           - checkout
           - echo "Push image"
+          - sudo apt install snapd
           - sudo snap install heroku --classic 
