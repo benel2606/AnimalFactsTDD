@@ -66,4 +66,5 @@ blocks:
           - echo "Push image"
           - sudo apt-get update
           - yes | sudo apt install snapd
-          - sudo snap install heroku --classic 
+          - sudo snap install heroku --classic
+          - git push Heroku master
