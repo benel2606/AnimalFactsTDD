@@ -32,8 +32,6 @@ blocks:
           - sudo easy_install nose
           - pip install nose
           - sudo apt install python-nose
-          - pip install nose.tools
-          - sudo apt install nose.tools
           - echo "install requests"
           - sudo easy_install requests
           - pip install requests
