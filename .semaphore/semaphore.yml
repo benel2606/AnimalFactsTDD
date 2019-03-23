@@ -67,4 +67,4 @@ blocks:
           - sudo apt-get update
           - yes | sudo apt install snapd
           - sudo snap install heroku --classic
-          - git push Heroku master
+          - git push https://git.heroku.com/animalfactsapp.git master
