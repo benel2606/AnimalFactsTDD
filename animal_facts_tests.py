@@ -2,8 +2,7 @@
 tests
 """
 import requests
-from nose.tools import assert_true # pylint: disable=import-error
-
+from nose.tools import assert_true  # pylint: disable=import-error
 
 
 def test_get_animal_facts():
