@@ -1,6 +1,7 @@
 """
 tests
 """
+from __future__ import print_function
 import requests
 from nose.tools import assert_true  # pylint: disable=import-error
 
