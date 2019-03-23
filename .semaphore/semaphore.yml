@@ -56,7 +56,7 @@ blocks:
           - echo "make lint with pylint"
           - cd /home/semaphore/AnimalFactsTDD
           - yes | sudo apt install pylint
-#           - pylint animal_facts_tests
+          - pylint animal_facts_tests
   - name: "Push"
     task:
       jobs:
