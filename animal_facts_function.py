@@ -75,6 +75,7 @@ def get_facts_by_date(facts_dicts, filter_date=None):
 
 FACTS = get_animal_facts().json()
 
+
 def main_screen():
     """
     Simple Implementation for our features
