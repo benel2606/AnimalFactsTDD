@@ -48,6 +48,7 @@ blocks:
           - echo "Start unit tests"
           - cd /home/semaphore/AnimalFactsTDD
           - sudo apt install python-nose
+          - sudo apt install mock
           - nosetests -s --verbosity=2 animal_facts_tests
   - name: "Lint code"
     task:
@@ -66,7 +67,7 @@ blocks:
         commands:  
           - checkout
           - echo "Push image"
-          - git config user.email "<email>"
-          - git config user.name "Deployment"
+#          - git config user.email "<email>"
+#          - git config user.name "Deployment"
           - git push https://heroku:978dbe14-f3c6-4e0b-bddb-19edfe7816e7@git.heroku.com/animalfactsapp.git master
 
