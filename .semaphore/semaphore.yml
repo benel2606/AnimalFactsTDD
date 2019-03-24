@@ -37,7 +37,7 @@ blocks:
           - pip install requests
           - echo "install pylint"
           - yes | sudo apt-get install pylint
-          - sudo easy_install mock
+          - yes | sudo apt install python-mock
           - pip install mock
   - name: "Run unit tests"
     task:
