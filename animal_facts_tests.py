@@ -15,7 +15,7 @@ from animal_facts_mock_dictionary import facts
 @patch('requests.get')
 def test_getting_facts_by_word_when_word_is_not_valid(mock_get):  # pylint: disable=invalid-name
     """
-    passes if 0 is returned when searching an empty word, else fails
+    Test 1: invalid word
     :param mock_get:
     :return:
     """
@@ -29,7 +29,7 @@ def test_getting_facts_by_word_when_word_is_not_valid(mock_get):  # pylint: disa
 @patch('requests.get')
 def test_getting_facts_by_word_when_word_is_valid(mock_get):  # pylint: disable=invalid-name
     """
-    passes if 2 facts are returned when searching 'years', else fails
+    Test 2: valid word
     :param mock_get:
     :return:
     """
@@ -43,7 +43,7 @@ def test_getting_facts_by_word_when_word_is_valid(mock_get):  # pylint: disable=
 @patch('requests.get')
 def test_getting_facts_by_word_when_word_is_not_string(mock_get):  # pylint: disable=invalid-name
     """
-    passes if 0 facts are returned when searching with an argument
+    Test 3: argument is not a string
     that is not of type string, else fails
     :param mock_get:
     :return:
@@ -57,7 +57,7 @@ def test_getting_facts_by_word_when_word_is_not_string(mock_get):  # pylint: dis
 @patch('requests.get')
 def test_getting_facts_by_word_when_no_argument_is_given(mock_get):  # pylint: disable=invalid-name
     """
-    passes if 0 facts are returned when no arguments are given, else fails
+    Test 4: no argument is given
     :param mock_get:
     :return:
     """
@@ -70,7 +70,7 @@ def test_getting_facts_by_word_when_no_argument_is_given(mock_get):  # pylint: d
 @patch('requests.get')
 def test_getting_facts_by_word_when_blank_word_is_given(mock_get):  # pylint: disable=invalid-name
     """
-    passes if 0 is return when searching an empty word e.g '', else fails
+    Test 5: word is a blank word
     :param mock_get:
     :return:
     """
@@ -85,36 +85,33 @@ def test_getting_facts_by_word_when_blank_word_is_given(mock_get):  # pylint: di
 @patch('requests.get')
 def test_getting_facts_by_date_when_date_is_valid(mock_get):  # pylint: disable=invalid-name
     """
-    passes if 1 fact is returned when searching for a valid date: 2018/01/04,
-    else fails.
+    Test 6: valid date
     :param mock_get:
     :return:
     """
     mock_get.return_value = Mock(ok=True)
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
-    assert_equal(len(get_facts_by_date(response.json(), "2018 01 04")), 1)
+    assert_equal(len(get_facts_by_date(response.json(), "2018-08-20")), 2)
 
 
 @patch('requests.get')
 def test_getting_facts_by_date_when_date_is_not_valid(mock_get):  # pylint: disable=invalid-name
     """
-    passes if 0 facts are returned when an invalid date is given,
-    else fails.
+    Test 7: invalid date
     :param mock_get:
     :return:
     """
     mock_get.return_value = Mock(ok=True)
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
-    assert_equal(len(get_facts_by_date(response.json(), "2020 01 04")), 0)
+    assert_equal(len(get_facts_by_date(response.json(), "2020-01-04")), 0)
 
 
 @patch('requests.get')
 def test_getting_facts_by_date_when_date_is_not_string(mock_get): # pylint: disable=invalid-name
     """
-    passes if 0 facts are returned when date is not a string,
-    else fails.
+    Test 8: date is not a string
     :param mock_get:
     :return:
     """
@@ -127,8 +124,7 @@ def test_getting_facts_by_date_when_date_is_not_string(mock_get): # pylint: disa
 @patch('requests.get')
 def test_getting_facts_by_date_when_date_is_blank(mock_get): # pylint: disable=invalid-name
     """
-    passes if 0 facts are returned when date is blank e.g '',
-    else fails.
+    Test 9: date is blank
     :param mock_get:
     :return:
     """
@@ -141,12 +137,11 @@ def test_getting_facts_by_date_when_date_is_blank(mock_get): # pylint: disable=i
 @patch('requests.get')
 def test_getting_facts_by_date_when_date_is_in_incorrect_format(mock_get): # pylint: disable=invalid-name
     """
-    passes if 0 facts are returned when date is in incorrect format,
-    else fails.
+    Test 10: date is in incorrect format
     :param mock_get:
     :return:
     """
     mock_get.return_value = Mock(ok=True)
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
-    assert_equal(len(get_facts_by_date(response.json(), "")), 0)
+    assert_equal(len(get_facts_by_date(response.json(), "01-2018-25")), 0)
