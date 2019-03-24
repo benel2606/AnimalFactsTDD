@@ -69,22 +69,27 @@ If your code's format is optimal, you should see this output:
 Otherwise, errors and warnings will be shown.
 
 ## Using the application
-First run the application (`$ python animal_facts_function.py`):  
+>First run the application (`$ python animal_facts_function.py`):  
 ![welcome](https://user-images.githubusercontent.com/34059996/54881219-86f70380-4e56-11e9-8740-5963b4dfc9f8.png)  
-To get facts by keyword, choose the first option:  
+
+>To get facts by keyword, choose the first option:  
 ![image (1)](https://user-images.githubusercontent.com/34059996/54881240-bd348300-4e56-11e9-9528-e8c968ccf5fe.png)  
-Then enter a word:  
+
+>Then enter a word:  
 ![enter word](https://user-images.githubusercontent.com/34059996/54881243-c9204500-4e56-11e9-8f46-f5c7982d9a53.png)  
-And you will see the results (if found):  
+
+>And you will see the results (if found):  
 ![word search result](https://user-images.githubusercontent.com/34059996/54881259-e523e680-4e56-11e9-9911-91afb6876afa.png)  
 
-After using one of the features you can go back to the menu or quit the app:  
+>After using one of the features you can go back to the menu or quit the app:  
 ![back or quit](https://user-images.githubusercontent.com/34059996/54881277-fec52e00-4e56-11e9-9dff-2a32ce50344c.png)
 
-To get facts by date, choose the second option:  
+>To get facts by date, choose the second option:  
 ![back to the menu](https://user-images.githubusercontent.com/34059996/54881284-0f75a400-4e57-11e9-9567-75a87fe76e7b.png)  
-Then enter a date:  
+
+>Then enter a date:  
 ![enter date](https://user-images.githubusercontent.com/34059996/54881296-2caa7280-4e57-11e9-9c23-a75a1b03d0af.png)  
-And you will see the results (if found):  
+
+>And you will see the results (if found):  
 ![date search result](https://user-images.githubusercontent.com/34059996/54881307-43e96000-4e57-11e9-9cbe-27434981b8c1.png)
 
