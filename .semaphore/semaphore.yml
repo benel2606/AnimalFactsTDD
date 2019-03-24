@@ -64,10 +64,10 @@ blocks:
         commands:  
           - checkout
           - echo "Push image"
-          - sudo apt-get update
-          - yes | sudo apt install snapd
-          - sudo snap install heroku --classic
+#           - sudo apt-get update
+#           - yes | sudo apt install snapd
+#           - sudo snap install heroku --classic
           - git config user.email "<email>"
           - git config user.name "Deployment"
- #           - git push https://git.heroku.com/animalfactsapp.git master
+#           - git push https://git.heroku.com/animalfactsapp.git master
           - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
