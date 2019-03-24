@@ -19,7 +19,7 @@ def get_animal_facts():
     return response
 
 
-def get_facts_by_word(facts_dict, filter_word):
+def get_facts_by_word(facts_dict, filter_word=None):
     """
     This function gets a array of dictionaries of facts and a filter word
     and returns all the facts which contains the filter word.
@@ -28,6 +28,9 @@ def get_facts_by_word(facts_dict, filter_word):
     :return: Array of strings, all the facts which pass the filter.
     """
     result = []
+    if filter_word is None or not isinstance(filter_word, str) or filter_word == "":
+        return result
+
     facts_num = 0
     for fact in facts_dict:
         if filter_word in fact["text"]:

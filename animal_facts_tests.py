@@ -4,7 +4,6 @@ unit testing for the 2 features:
 2. searching by a date of creation.
 """
 from __future__ import print_function
-# from unittest.mock import Mock, patch
 from mock import Mock, patch
 from nose.tools import assert_equal  # pylint: disable=import-error
 from animal_facts_function import get_animal_facts, get_facts_by_word
@@ -53,7 +52,6 @@ def test_getting_facts_by_word_when_word_is_not_string(mock_get):
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
     assert_equal(len(get_facts_by_word(response.json(), 6)), 0)
-    # print(len(get_facts_by_word(response.json(), 6)))
 
 
 @patch('requests.get')
@@ -67,13 +65,12 @@ def test_getting_facts_by_word_when_no_argument_is_given(mock_get):
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
     assert_equal(len(get_facts_by_word(response.json())), 0)
-    # print(len(get_facts_by_word(response.json())))
 
 
 @patch('requests.get')
 def test_getting_facts_by_word_when_blank_word_is_given(mock_get):
     """
-    passes if the 0 is return when searching an empty word e.g '   ', else fails
+    passes if the 0 is return when searching an empty word e.g '', else fails
     :param mock_get:
     :return:
     """
@@ -81,4 +78,3 @@ def test_getting_facts_by_word_when_blank_word_is_given(mock_get):
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
     assert_equal(len(get_facts_by_word(response.json(), "")), 0)
-    # print(len(get_facts_by_word(response.json())))
