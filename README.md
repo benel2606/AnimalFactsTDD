@@ -2,7 +2,9 @@
 
 In this project we're working in TDD & CICD approaches.  
 Generally the application retrieves facts about cats, dogs, horses or snails.  
-The application contains two features: facts by keywords and facts by upload date.  
+The application contains two features: 
+* Facts by keywords. 
+* Facts by upload date.  
 
 ## Getting Started
 
