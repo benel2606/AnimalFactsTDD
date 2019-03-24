@@ -4,7 +4,8 @@ unit testing for the 2 features:
 2. searching by a date of creation.
 """
 from __future__ import print_function
-from unittest.mock import Mock, patch
+# from unittest.mock import Mock, patch
+from mock import Mock, patch
 from nose.tools import assert_equal  # pylint: disable=import-error
 from animal_facts_function import get_animal_facts, get_facts_by_word
 from animal_facts_mock_dictionary import facts
