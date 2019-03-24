@@ -37,6 +37,8 @@ blocks:
           - pip install requests
           - echo "install pylint"
           - yes | sudo apt-get install pylint
+          - sudo easy_install mock
+          - pip install mock
   - name: "Run unit tests"
     task:
       jobs:
@@ -66,5 +68,5 @@ blocks:
           - echo "Push image"
           - git config user.email "<email>"
           - git config user.name "Deployment"
-          -  git push https://heroku:978dbe14-f3c6-4e0b-bddb-19edfe7816e7@git.heroku.com/animalfactsapp.git master
+          - git push https://heroku:978dbe14-f3c6-4e0b-bddb-19edfe7816e7@git.heroku.com/animalfactsapp.git master
 
