@@ -18,7 +18,7 @@ blocks:
           - echo $APP_ENV
           - echo "Docker build..."
           - echo "done"
-  - name: "Install packeages"
+  - name: "Install packages"
     task:
       jobs:
       - name: Install packages
@@ -64,11 +64,7 @@ blocks:
         commands:  
           - checkout
           - echo "Push image"
-#           - sudo apt-get update
-#           - yes | sudo apt install snapd
-#           - sudo snap install heroku --classic
           - git config user.email "<email>"
           - git config user.name "Deployment"
-#           - git push https://git.heroku.com/animalfactsapp.git master
           -  git push https://heroku:978dbe14-f3c6-4e0b-bddb-19edfe7816e7@git.heroku.com/animalfactsapp.git master
 
