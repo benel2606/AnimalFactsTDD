@@ -48,7 +48,6 @@ blocks:
           - echo "Start unit tests"
           - cd /home/semaphore/AnimalFactsTDD
           - sudo apt install python-nose
-          - yes | sudo apt install unittest
           - yes | sudo apt install mock
           - pip install mock
           - nosetests -s --verbosity=2 animal_facts_tests
