@@ -71,3 +71,48 @@ def get_facts_by_date(facts_dicts, filter_date=None):
                 print()
 
     return result
+
+
+FACTS = get_animal_facts().json()
+
+def main_screen():
+    """
+    Simple Implementation for our features
+    :return:
+    """
+    print("Welcome to Animal Facts App!")
+    print("Press 1 to search facts by a word")
+    print("Press 2 to search facts by a date")
+    choice1 = input("your choice: ")
+    while choice1 not in ('1', '2'):
+        choice1 = input("invalid choice, choose again:")
+    if choice1 == '1':
+        print("Enter a word to search by: ")
+        word = input()
+        get_facts_by_word(FACTS, word)
+        print("Would you like to search again or quit?")
+        print("Press 1 to search again and 2 to quit")
+        choice2 = input()
+        while choice2 not in ('1', '2'):
+            choice2 = input("invalid choice, choose again:")
+        if choice2 == '1':
+            main_screen()
+        elif choice2 == '2':
+            quit()
+
+    elif choice1 == '2':
+        print("Enter the date to search by")
+        print("date must be in the format: yyyy-mm-dd")
+        date = input()
+        get_facts_by_date(FACTS, date)
+        print("Would you like to search again or quit?")
+        print("Press 1 to search again and 2 to quit")
+        choice2 = input()
+        while choice2 not in ('1', '2'):
+            choice2 = input("invalid choice, choose again:")
+        if choice2 == '1':
+            main_screen()
+        elif choice2 == '2':
+            quit()
+
+main_screen()
