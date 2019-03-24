@@ -52,7 +52,7 @@ facts = [
         'updatedAt': "2019-03-11T20:21:02.413Z",
         'createdAt': "2018-06-02T17:41:41.455Z",
         'user': "5a9ac18c7478810ea6c06381",
-        'text': "A 19th century horse named ‘Old Billy’ is said to have lived 62 years.",
+        'text': "A 19th century horse named Old Billy is said to have lived 62 years.",
         '__v': 0,
         'deleted': False,
         'type': "horse",
