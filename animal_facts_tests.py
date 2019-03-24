@@ -5,7 +5,7 @@ unit testing for the 2 features:
 """
 from __future__ import print_function
 from mock import Mock, patch
-from nose.tools import assert_equal  # pylint: disable=import-error, invalid-name
+from nose.tools import assert_equal  # pylint: disable=import-error
 from animal_facts_function import get_animal_facts, get_facts_by_word
 from animal_facts_mock_dictionary import facts
 
@@ -13,7 +13,7 @@ from animal_facts_mock_dictionary import facts
 # Facts by word tests
 
 @patch('requests.get')
-def test_getting_facts_by_word_when_word_is_not_valid(mock_get):
+def test_getting_facts_by_word_when_word_is_not_valid(mock_get):  # pylint: disable=invalid-name
     """
     passes if 0 is returned when searching an empty word, else fails
     :param mock_get:
@@ -27,7 +27,7 @@ def test_getting_facts_by_word_when_word_is_not_valid(mock_get):
 
 
 @patch('requests.get')
-def test_getting_facts_by_word_when_word_is_valid(mock_get):
+def test_getting_facts_by_word_when_word_is_valid(mock_get):  # pylint: disable=invalid-name
     """
     passes if 2 facts are returned when searching 'years', else fails
     :param mock_get:
@@ -41,7 +41,7 @@ def test_getting_facts_by_word_when_word_is_valid(mock_get):
 
 
 @patch('requests.get')
-def test_getting_facts_by_word_when_word_is_not_string(mock_get):
+def test_getting_facts_by_word_when_word_is_not_string(mock_get):  # pylint: disable=invalid-name
     """
     passes if 0 facts are returned when searching with an argument
     that is not of type string, else fails
@@ -55,7 +55,7 @@ def test_getting_facts_by_word_when_word_is_not_string(mock_get):
 
 
 @patch('requests.get')
-def test_getting_facts_by_word_when_no_argument_is_given(mock_get):
+def test_getting_facts_by_word_when_no_argument_is_given(mock_get):  # pylint: disable=invalid-name
     """
     passes if 0 facts are returned when no arguments are given, else fails
     :param mock_get:
@@ -68,7 +68,7 @@ def test_getting_facts_by_word_when_no_argument_is_given(mock_get):
 
 
 @patch('requests.get')
-def test_getting_facts_by_word_when_blank_word_is_given(mock_get):
+def test_getting_facts_by_word_when_blank_word_is_given(mock_get):  # pylint: disable=invalid-name
     """
     passes if the 0 is return when searching an empty word e.g '', else fails
     :param mock_get:
