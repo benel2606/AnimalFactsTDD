@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b2eb9f9-03c4-4590-aff3-4d174d6624ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/animal_facts_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/animal_facts_tests.py" afterDir="false" />
-    </list>
+    <list default="true" id="6b2eb9f9-03c4-4590-aff3-4d174d6624ec" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animal_facts_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-506">
-              <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+            <state relative-caret-position="76">
+              <caret line="70" column="98" selection-start-line="70" selection-start-column="98" selection-end-line="70" selection-end-column="98" />
+              <folding>
+                <element signature="e#110#147#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,8 +220,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/animal_facts_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+        <state relative-caret-position="76">
+          <caret line="70" column="98" selection-start-line="70" selection-start-column="98" selection-end-line="70" selection-end-column="98" />
+          <folding>
+            <element signature="e#110#147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

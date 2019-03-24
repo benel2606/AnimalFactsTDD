@@ -70,7 +70,7 @@ def test_getting_facts_by_word_when_no_argument_is_given(mock_get):  # pylint: d
 @patch('requests.get')
 def test_getting_facts_by_word_when_blank_word_is_given(mock_get):  # pylint: disable=invalid-name
     """
-    passes if the 0 is return when searching an empty word e.g '', else fails
+    passes if 0 is return when searching an empty word e.g '', else fails
     :param mock_get:
     :return:
     """
@@ -78,3 +78,4 @@ def test_getting_facts_by_word_when_blank_word_is_given(mock_get):  # pylint: di
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
     assert_equal(len(get_facts_by_word(response.json(), "")), 0)
+
