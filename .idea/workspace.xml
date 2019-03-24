@@ -20,8 +20,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animal_facts_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-826">
-              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+            <state relative-caret-position="296">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="e#14#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,7 +154,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09187046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -189,13 +191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animal_facts_mock_dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5258">
-          <caret line="239" column="1" selection-start-line="239" selection-start-column="1" selection-end-line="239" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/animal_facts_function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -203,10 +198,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/animal_facts_mock_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5258">
+          <caret line="239" column="1" selection-start-line="239" selection-start-column="1" selection-end-line="239" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/animal_facts_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-826">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        <state relative-caret-position="296">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#14#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
