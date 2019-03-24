@@ -6,7 +6,7 @@ unit testing for the 2 features:
 from __future__ import print_function
 from mock import Mock, patch
 from nose.tools import assert_equal  # pylint: disable=import-error
-from animal_facts_function import get_animal_facts, get_facts_by_word
+from animal_facts_function import get_animal_facts, get_facts_by_word, get_facts_by_date
 from animal_facts_mock_dictionary import facts
 
 
@@ -150,6 +150,3 @@ def test_getting_facts_by_date_when_date_is_in_incorrect_format(mock_get): # pyl
     mock_get.return_value.json.return_value = facts
     response = get_animal_facts()
     assert_equal(len(get_facts_by_date(response.json(), "")), 0)
-
-
-
