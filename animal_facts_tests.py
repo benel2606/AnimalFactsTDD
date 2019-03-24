@@ -15,7 +15,7 @@ from animal_facts_mock_dictionary import facts
 @patch('requests.get')
 def test_getting_facts_by_word_when_word_is_not_valid(mock_get):  # pylint: disable=invalid-name
     """
-    Test 1: invalid word
+    Test 1: invalid word is given
     :param mock_get:
     :return:
     """
@@ -29,7 +29,7 @@ def test_getting_facts_by_word_when_word_is_not_valid(mock_get):  # pylint: disa
 @patch('requests.get')
 def test_getting_facts_by_word_when_word_is_valid(mock_get):  # pylint: disable=invalid-name
     """
-    Test 2: valid word
+    Test 2: valid word is given
     :param mock_get:
     :return:
     """
@@ -85,7 +85,7 @@ def test_getting_facts_by_word_when_blank_word_is_given(mock_get):  # pylint: di
 @patch('requests.get')
 def test_getting_facts_by_date_when_date_is_valid(mock_get):  # pylint: disable=invalid-name
     """
-    Test 6: valid date
+    Test 6: valid date is given
     :param mock_get:
     :return:
     """
@@ -98,7 +98,7 @@ def test_getting_facts_by_date_when_date_is_valid(mock_get):  # pylint: disable=
 @patch('requests.get')
 def test_getting_facts_by_date_when_date_is_not_valid(mock_get):  # pylint: disable=invalid-name
     """
-    Test 7: invalid date
+    Test 7: invalid date is given
     :param mock_get:
     :return:
     """
