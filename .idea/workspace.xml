@@ -12,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animal_facts_tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.semaphore/semaphore.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            <state relative-caret-position="198">
+              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -71,8 +71,8 @@
         <option value="$PROJECT_DIR$/AnimalFactsFunction.py" />
         <option value="$PROJECT_DIR$/animal_facts_mock_dictionary.py" />
         <option value="$PROJECT_DIR$/animal_facts_function.py" />
-        <option value="$PROJECT_DIR$/animal_facts_tests.py" />
         <option value="$PROJECT_DIR$/.semaphore/semaphore.yml" />
+        <option value="$PROJECT_DIR$/animal_facts_tests.py" />
       </list>
     </option>
   </component>
@@ -164,7 +164,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09187046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -209,6 +208,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.semaphore/semaphore.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/animal_facts_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -216,13 +222,6 @@
           <folding>
             <element signature="e#110#147#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.semaphore/semaphore.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
         </state>
       </provider>
     </entry>
