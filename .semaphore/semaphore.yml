@@ -49,6 +49,8 @@ blocks:
           - cd /home/semaphore/AnimalFactsTDD
           - sudo apt install python-nose
           - yes | sudo apt install mock
+          - sem-version 3.7
+          - pip install mock
           - nosetests -s --verbosity=2 animal_facts_tests
   - name: "Lint code"
     task:
