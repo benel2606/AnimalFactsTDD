@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 facts = [
     {
         '_id': "5b7a08cb2048fd0014e9d8bf",
