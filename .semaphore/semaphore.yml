@@ -59,6 +59,7 @@ blocks:
           - echo "make lint with pylint"
           - cd /home/semaphore/AnimalFactsTDD
           - yes | sudo apt install pylint
+          - yes | sudo apt install python-mock
           - pylint animal_facts_tests
   - name: "Push"
     task:
