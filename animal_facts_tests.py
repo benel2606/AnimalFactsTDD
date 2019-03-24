@@ -5,7 +5,7 @@ unit testing for the 2 features:
 """
 from __future__ import print_function
 from mock import Mock, patch
-from nose.tools import assert_equal  # pylint: disable=import-error
+from nose.tools import assert_equal  # pylint: disable=import-error, invalid-name
 from animal_facts_function import get_animal_facts, get_facts_by_word
 from animal_facts_mock_dictionary import facts
 
